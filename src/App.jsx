@@ -1,10 +1,9 @@
 import { React, useState, useEffect } from "react"
+import axios from "axios"
 /*local imports */
 import NavBar from "./components/Navbar"
 import DetailScreen from "./components/DetailScreen"
 import CityWeather from "./components/CityWeather"
-
-import axios from "axios"
 
 export default function App() {
   const [location, setLocation] = useState("Lahore")
@@ -16,6 +15,7 @@ export default function App() {
   function handleChange(value) {
     setLocation(value)
   }
+
   function handleClick(e) {
     e.preventDefault()
     setRequestState((prevValue) => !prevValue)
@@ -40,6 +40,7 @@ export default function App() {
         sunrise={data?.sys?.sunrise ? data.sys.sunrise : null}
         sunset={data?.sys?.sunset ? data.sys.sunset : null}
       />
+      feels_like
       <DetailScreen
         pressure={data.main ? data.main.pressure : null}
         wind={data.main ? data.wind.speed : null}
