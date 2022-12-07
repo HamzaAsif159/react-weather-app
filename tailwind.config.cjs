@@ -8,6 +8,8 @@ module.exports = {
       secondary: "#091f39",
       smoke: "#eef3f3",
       offwhite: "#fafcfe",
+      lightblue: "#294269",
+      border: "6180b9",
     },
     extend: {},
   },

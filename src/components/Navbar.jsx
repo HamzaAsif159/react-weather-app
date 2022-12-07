@@ -2,8 +2,8 @@ import { React, useState } from "react"
 
 export default function NavBar(props) {
   return (
-    <nav className="flex items-center justify-between bg-secondary py-4 px-4">
-      <h1 className="text-2xl font-semibold uppercase text-offwhite">
+    <nav className=" text-center md:flex items-center justify-between bg-secondary py-4 px-4">
+      <h1 className="mb-2 text-xl font-semibold uppercase text-offwhite md:text-2xl">
         WeatherBug
       </h1>
       <form>
@@ -12,7 +12,7 @@ export default function NavBar(props) {
           onChange={(e) => props.handleChange(e.target.value)}
           value={props.value}
           placeholder="Search city"
-          className="bg-smoke px-2 py-2 rounded-md"
+          className="bg-smoke px-2 py-2 rounded-md mb-2"
           required
         />
         <button
