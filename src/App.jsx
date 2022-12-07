@@ -40,7 +40,6 @@ export default function App() {
         sunrise={data?.sys?.sunrise ? data.sys.sunrise : null}
         sunset={data?.sys?.sunset ? data.sys.sunset : null}
       />
-      feels_like
       <DetailScreen
         pressure={data.main ? data.main.pressure : null}
         wind={data.main ? data.wind.speed : null}
