@@ -1,7 +1,5 @@
 import React from "react"
 import DetailBox from "./DeatilsBox"
-import timeFormat from "../../utils/FormatTime"
-import CityWeather from "./CityWeather"
 
 export default function DetailScreen(props) {
   return (
