@@ -14,14 +14,12 @@ export default function App() {
   let url = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=1a6853c7595c5c99794891a5975108d4&units=metric`
 
   function handleChange(value) {
-    console.log(location)
     setLocation(value)
   }
   function handleClick(e) {
     e.preventDefault()
     setRequestState((prevValue) => !prevValue)
   }
-  console.log(data)
 
   useEffect(() => {
     axios.get(url).then((response) => setData(response.data))
