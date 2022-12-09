@@ -45,7 +45,6 @@ export default function App() {
         wind={data.main ? data.wind.speed : null}
         highest={data.main ? data.main.temp_max : null}
         humidity={data.main ? data.main.humidity : null}
-        temp={data.main ? data.main.temp : null}
         city={data ? data.name : null}
       />
     </div>
